@@ -99,6 +99,13 @@ namespace NModbus.IO
         private byte[] ReadResponse()
         {
             byte[] frameStart = Read(ResponseFrameStartLength);
+            var functionCode = frameStart[1];
+            // ReadFile
+            if (functionCode == 0x50) 
+            {
+                byte[] extraFrameStartBytes = Read(3);
+                frameStart = frameStart.Concat(extraFrameStartBytes).ToArray();
+            }
             byte[] frameEnd = Read(ResponseBytesToRead(frameStart));
             byte[] frame = frameStart.Concat(frameEnd).ToArray();
 
