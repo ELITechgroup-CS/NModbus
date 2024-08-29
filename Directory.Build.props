@@ -1,0 +1,12 @@
+<Project>
+	
+	<PropertyGroup>
+		<PackageOutputPath>$(SolutionDir)_packages\$(Configuration)</PackageOutputPath>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Nerdbank.GitVersioning" PrivateAssets="All" />
+	</ItemGroup>
+
+</Project>

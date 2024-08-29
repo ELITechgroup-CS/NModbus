@@ -5,6 +5,7 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{67F4885B-CF1F-4640-943F-363213B100A9}"
 	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
 		NuGet.config = NuGet.config
 		README.md = README.md
 	EndProjectSection
@@ -19,7 +20,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples", "Samples\Samples.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NModbus.SerialPortStream", "NModbus.SerialPortStream\NModbus.SerialPortStream.csproj", "{708692AA-7F52-4A8A-94B0-CB6F60982223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NModbus.IntegrationTests", "NModbus.IntegrationTests\NModbus.IntegrationTests.csproj", "{1AA055F2-68E1-409F-A744-6081D7A27A57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NModbus.IntegrationTests", "NModbus.IntegrationTests\NModbus.IntegrationTests.csproj", "{1AA055F2-68E1-409F-A744-6081D7A27A57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
