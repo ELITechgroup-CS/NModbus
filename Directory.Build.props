@@ -6,7 +6,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Nerdbank.GitVersioning" PrivateAssets="All" />
+		<PackageReference Include="Nerdbank.GitVersioning" PrivateAssets="All" Version="3.7.115" />
 	</ItemGroup>
 
 </Project>
